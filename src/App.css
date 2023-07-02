@@ -31,7 +31,7 @@
 #square1 {
   /* top: 30%;
     left: 5%; */
-  background-image: url("src/assets/html-1.svg");
+  background-image: url("/assets/html-1.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -40,7 +40,7 @@
 #square2 {
   /* top: 30%;
     left: 15%; */
-  background-image: url("src/assets/css-3.svg");
+  background-image: url("/assets/css-3.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -49,7 +49,7 @@
 #square3 {
   /* top: 30%;
     left: 25%; */
-  background-image: url("src/assets/logo-javascript.svg");
+  background-image: url("/assets/logo-javascript.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -58,7 +58,7 @@
 #square4 {
   /* top: 30%;
     left: 25%; */
-  background-image: url("src/assets/react.svg");
+  background-image: url("/assets/react.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -67,7 +67,7 @@
 #square5 {
   /* top: 30%;
     left: 25%; */
-  background-image: url("src/assets/typescript.svg");
+  background-image: url("/assets/typescript.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -76,7 +76,7 @@
 #square6 {
   /* top: 30%;
     left: 25%; */
-  background-image: url("src/assets/nodejs-1.svg");
+  background-image: url("/assets/nodejs-1.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -85,7 +85,7 @@
 #square7 {
   /* top: 30%;
     left: 25%; */
-  background-image: url("src/assets/php-1.svg");
+  background-image: url("/assets/php-1.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -94,7 +94,7 @@
 #square8 {
   /* top: 30%;
     left: 25%; */
-  background-image: url("src/assets/mysql-6.svg");
+  background-image: url("/assets/mysql-6.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -103,7 +103,7 @@
 #square9 {
   /* top: 30%;
     left: 25%; */
-  background-image: url("src/assets/postgresql.svg");
+  background-image: url("/assets/postgresql.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -112,7 +112,7 @@
 #circle1 {
   /* top: 30%;
     left: 25%; */
-  background-image: url("src/assets/laravel-2.svg");
+  background-image: url("/assets/laravel-2.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -121,7 +121,7 @@
 #circle2 {
   /* top: 30%;
     left: 25%; */
-  background-image: url("src/assets/vue-9.svg");
+  background-image: url("/assets/vue-9.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -130,7 +130,7 @@
 #circle3 {
   /* top: 30%;
     left: 25%; */
-  background-image: url("src/assets/tailwindcss.svg");
+  background-image: url("/assets/tailwindcss.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-      {/* <CenteredImage src="src/assets/logo-javascript.svg" alt="logo JavaScript" /> */}
+      {/* <CenteredImage src="public/assets/logo-javascript.svg" alt="logo JavaScript" /> */}
       <h1 className="text-center mb-4 font-fortnite">Portfólio</h1>
       <div className="flex -mt-4">
         <h1 className="text-left mb-4 px-32 font-fortnite mr-72">
@@ -154,11 +154,11 @@ function App() {
         </div>
       </div>
       <CenteredImage
-        src="src/assets/miranha3.png"
+        src="public/assets/miranha3.png"
         alt="Personagem Aranha Humana"
       />
       {/* <CenteredImage
-        src="src/assets/teste.gif"
+        src="public/assets/teste.gif"
         alt="Personagem Aranha Humana"
       /> */}
     </>
