@@ -15,8 +15,12 @@ export default {
       },
       colors: {
         progress: "#06CA98",
+        backgroud: "#000A2C",
+        card: "#0F1739",
+        spider1: "#DD2727",
+        spider0: "#0D0D0D",
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
