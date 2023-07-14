@@ -35,7 +35,10 @@ export default function Content() {
           <CardDescription description={description} />
         </div>
         <div>
-          <CenteredImage src="assets/teste.png" alt="homem aranha" />
+          <CenteredImage
+            src="assets/samuel.jpg"
+            alt="Samuel Rech Cassanego foto de perfil"
+          />
           <Info />
         </div>
         <div>
@@ -51,18 +54,18 @@ export default function Content() {
               "Lógica de programação",
               "Dedicação",
               "Vontade de desistir",
-              "Vontede de chorar",
+              "Vontade de chorar",
             ]}
-            progress={["100", "100", "25", "20"]}
+            progress={["100", "100", "10", "15"]}
           />
         </div>
       </div>
       <div className="flex flex-col lg:hidden">
-        <div>
+        <div className="mt-4">
           <CenteredImage
             className="justify-center items-center"
-            src="assets/teste.png"
-            alt="homem aranha"
+            src="assets/samuel.jpg"
+            alt="Samuel Rech Cassanego foto de perfil"
           />
           <Info />
         </div>
@@ -72,12 +75,12 @@ export default function Content() {
               "Lógica de programação",
               "Dedicação",
               "Vontade de desistir",
-              "Vontede de chorar",
+              "Vontade de chorar",
             ]}
-            progress={["100", "100", "25", "20"]}
+            progress={["100", "100", "10", "15"]}
           />
           <div>
-            <div className="navbar btn btn-ghost text-2xl font-fortnite">
+            <div className="navbar btn btn-ghost text-2xl text-white font-fortnite">
               Tecnologias
             </div>
             <div>
@@ -105,7 +108,7 @@ export default function Content() {
             </div>
           </div>
           <div>
-            <div className="navbar btn btn-ghost text-2xl font-fortnite">
+            <div className="navbar btn btn-ghost text-2xl text-white font-fortnite">
               Frameworks
             </div>
             <div>

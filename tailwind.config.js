@@ -17,10 +17,10 @@ export default {
         progress: "#06CA98",
         backgroud: "#000A2C",
         card: "#0F1739",
-        spider1: "#DD2727",
+        spider1: "#3E2B96",
         spider0: "#0D0D0D",
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("tailwind-scrollbar")],
 };

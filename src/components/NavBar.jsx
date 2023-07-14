@@ -3,7 +3,7 @@ import React from "react";
 function NavBar() {
   return (
     <>
-      <div className="hidden lg:flex navbar text-gray-300">
+      <div className="hidden lg:flex navbar text-white">
         <div className="navbar-start text-2xl font-fortnite ml-32">
           Tecnologias
         </div>
@@ -14,7 +14,7 @@ function NavBar() {
           Frameworks
         </div>
       </div>
-      <div className="flex lg:hidden">
+      <div className="flex lg:hidden text-white">
         <div className="navbar btn btn-ghost text-2xl font-fortnite">
           Portifólio
         </div>

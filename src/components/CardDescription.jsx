@@ -41,7 +41,7 @@ export default function CardDescription(props) {
   }, [props.description]);
 
   return (
-    <div className="card w-96 h-48 mt-20 bg-card shadow-xl">
+    <div className="card w-96 h-48 mt-20 bg-card shadow-xl -mt-1">
       <div className="card-body">
         <h2 className="card-title">Descrição</h2>
         <p>{text}</p>
