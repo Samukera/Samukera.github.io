@@ -8,7 +8,7 @@ function App() {
     <>
       <NavBar className="bg-background" />
       <Content />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
