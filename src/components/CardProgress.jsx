@@ -2,7 +2,7 @@ import ProgressBar from "./ProgressBar";
 export default function CardProgress(props) {
   return (
     <>
-      <div className="hidden lg:flex card w-auto bg-card shadow-xl mt-20 text-white">
+      <div className="hidden lg:flex card w-auto bg-card shadow-xl mt-20 text-white opacity-85">
         <div className="card-body">
           <div className="flex justify-between">
             <h2 className="card-title">Samuel Rech Cassanego</h2>
