@@ -53,10 +53,10 @@ export default function Content() {
             label={[
               "Lógica de programação",
               "Dedicação",
-              "Vontade de desistir",
-              "Vontade de chorar",
+              "Timidez",
+              "Ansiedade em reuniões",
             ]}
-            progress={["100", "100", "10", "15"]}
+            progress={["100", "100", "45", "30"]}
           />
         </div>
       </div>
@@ -74,10 +74,10 @@ export default function Content() {
             label={[
               "Lógica de programação",
               "Dedicação",
-              "Vontade de desistir",
-              "Vontade de chorar",
+              "Timidez",
+              "Ansiedade em reuniões",
             ]}
-            progress={["100", "100", "10", "15"]}
+            progress={["100", "100", "45", "30"]}
           />
           <div>
             <div className="navbar btn btn-ghost text-2xl text-white font-fortnite">
