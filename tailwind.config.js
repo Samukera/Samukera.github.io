@@ -1,26 +1,19 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      dropShadow: {
-        red: "0 0 2em rgba(255, 10, 10, 0.8)",
-        blueSpider: "0 0 4em #253780",
-      },
-      fontFamily: {
-        fortnite: ['"fortnite"', "sans-serif"],
-      },
-      margin: {
-        72: "22rem",
-      },
       colors: {
-        progress: "#06CA98",
-        backgroud: "#000A2C",
-        card: "#0F1739",
-        spider1: "#3E2B96",
-        spider0: "#0D0D0D",
+        primary: "#3fd35d",
+        secondary: "#59e0a6",
+        accent: "#5db4cc",
+        neutral: "#312a3c",
+        "base-100": "#f5eff6",
+        info: "#427AA1",
+        success: "#32c8ac",
+        warning: "#da9010",
+        error: "#fc5940",
       },
     },
   },
-  plugins: [require("daisyui"), require("tailwind-scrollbar")],
+  plugins: [require("daisyui")],
 };
