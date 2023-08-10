@@ -7,7 +7,10 @@ function App() {
   return (
     <>
       {/* <Navbar /> */}
-      <Content />
+      <div className="m-20">
+        <Content />
+      </div>
+      
 
     </>
   )
