@@ -1,13 +1,30 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import React from "react";
 import { RiNewspaperLine } from "react-icons/ri";
-export default function Buttons(){
+
+export default function Buttons() {
     return (
-        <>
-        <div className="flex m-2">
-            <a href="https://github.com/Samukera" target="_blank"><button className="btn  m-2 normal-case"><FaGithub/> GitHub</button></a>
-            <a href="https://www.linkedin.com/in/samuel-rech-cassanego-668359189/" target="_blank"><button className="btn  btn-info m-2  normal-case"><FaLinkedin/> LinkedIn</button></a>
-            <a href="https://drive.google.com/file/d/1XuhvxoYWnie7jhkDJ2zLCcAkEM8MJDDH/view?usp=sharing" target="_blank"><button className="btn  btn-warning m-2 normal-case"><RiNewspaperLine/>Currículo</button></a>
+        <div className="flex flex-wrap gap-4 mt-4">
+            {/* GitHub */}
+            <a href="https://github.com/Samukera" target="_blank">
+                <button className="flex items-center gap-2 bg-neutral text-base-100 px-4 py-2 rounded-full hover:bg-neutral-800 transition">
+                    <FaGithub /> GitHub
+                </button>
+            </a>
+
+            {/* LinkedIn */}
+            <a href="https://www.linkedin.com/in/samuel-rech-cassanego-668359189/" target="_blank">
+                <button className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">
+                    <FaLinkedin /> LinkedIn
+                </button>
+            </a>
+
+            {/* Currículo */}
+            <a href="https://drive.google.com/file/d/1XuhvxoYWnie7jhkDJ2zLCcAkEM8MJDDH/view?usp=sharing" target="_blank">
+                <button className="flex items-center gap-2 bg-accent text-white px-4 py-2 rounded-full hover:bg-purple-700 transition">
+                    <RiNewspaperLine /> Currículo
+                </button>
+            </a>
         </div>
-        </>
     );
 }

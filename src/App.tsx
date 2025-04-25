@@ -1,17 +1,19 @@
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './App.css'
 import Content from './components/Content'
-// import Navbar from './components/Navbar'
 
 function App() {
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // duração da animação em ms
+      once: true, // anima apenas uma vez
+    });
+  }, []);
   return (
     <>
-      {/* <Navbar /> */}
-      <div className="m-20">
         <Content />
-      </div>
-      
-
     </>
   )
 }
