@@ -28,7 +28,7 @@ export default function Contact() {
       {/* Botões sociais */}
       <div className="flex gap-4">
         <a
-          href="https://www.linkedin.com/in/seu-usuario"
+          href="https://www.linkedin.com/in/samuel-rech-cassanego-668359189/"
           target="_blank"
           className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full hover:bg-blue-700 transition"
         >

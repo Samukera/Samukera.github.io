@@ -1,6 +1,4 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import React from "react";
-import { RiNewspaperLine } from "react-icons/ri";
 
 export default function Buttons() {
     return (
@@ -16,13 +14,6 @@ export default function Buttons() {
             <a href="https://www.linkedin.com/in/samuel-rech-cassanego-668359189/" target="_blank">
                 <button className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">
                     <FaLinkedin /> LinkedIn
-                </button>
-            </a>
-
-            {/* Currículo */}
-            <a href="https://drive.google.com/file/d/1XuhvxoYWnie7jhkDJ2zLCcAkEM8MJDDH/view?usp=sharing" target="_blank">
-                <button className="flex items-center gap-2 bg-accent text-white px-4 py-2 rounded-full hover:bg-purple-700 transition">
-                    <RiNewspaperLine /> Currículo
                 </button>
             </a>
         </div>

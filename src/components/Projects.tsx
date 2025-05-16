@@ -1,15 +1,30 @@
-import React from "react";
 import Card from "./Card";
 
 export default function Projects() {
   const projetos = [
     {
-      titulo: "Task Manager",
-      imagem: "/react.svg",
-      descricao: "Projeto pessoal para gerenciamento de tarefas com foco em produtividade.",
+      titulo: "Robson - Sistema online para estimativas de tasks (Planning poker)",
+      imagem: "/javascript.svg", // alterar para a imagem correta
+      descricao: "O Robson nasceu da vontade de facilitar o acesso a ferramentas que possibilitam uma planning poker online. O sistema é uma aplicação web que permite a criação de salas de planejamento, onde os participantes podem estimar tarefas de forma colaborativa e em tempo real. Através de uma interface intuitiva, os usuários podem criar salas, convidar membros e realizar a votação das estimativas.",
+      categoria: "Frontend",
+      tecnologias: ["Javascript", "Socket.io"],
+      link: "https://climabet.net/robson/#/"
+    },
+    {
+      titulo: "Projeto de Estudos em parceria com veterinários especializados em animais silvestres - Monitoramento de Tamanduá em recinto controlado.",
+      imagem: "/python-3.svg",
+      descricao: "Projeto de estudos em parceria com veterinários especializados em animais silvestres, focado no monitoramento de tamanduás em recinto controlado. Com o uso de IA, foi desenvolvido um sistema de monitoramento que utiliza YOLO para detectar e rastrear os tamanduás em tempo real, permitindo uma análise mais precisa do comportamento e saúde dos animais.",
       categoria: "Redes Neurais",
-      tecnologias: ["React", "Node.js", "PostgreSQL"],
-      link: "#"
+      tecnologias: ["Python", "YOLO", "OpenCV", "Excel"],
+      link: "https://drive.google.com/drive/folders/1j5B79YpRvUN7_Gw3FC2wsbNGI2-SctWa?usp=sharing"
+    },
+    {
+      titulo: "Projeto de TCC - Detecção automática não invasiva de dados biométricos para peixes através de inteligência artificial.",
+      imagem: "/python-3.svg",
+      descricao: "Projeto de TCC focado na aplicação de IA em piscicultura, utilizando Python para desenvolver um sistema de monitoramento e análise de dados. O projeto visa otimizar processos de manejo como por exemplo: biometria dos peixes, utilizando técnicas avançadas de aprendizado de máquina. Atualmente o projeto se encontra em SIGILO devido a questões de propriedade intelectual e pesquisas em andamento.",
+      categoria: "Redes Neurais",
+      tecnologias: ["Python", "YOLO", "OpenCV", "Excel"],
+      link: "https://repositorio.ufsm.br/handle/1/32889"
     },
     {
       titulo: "Prae - Livro Fora Estante",
@@ -37,7 +52,7 @@ export default function Projects() {
     >
       {/* Título */}
       <div className="text-center mb-8">
-        <p className="text-4xl font-bold italic text-primary">Projetos 🪤</p>
+        <p className="text-4xl font-bold italic text-primary">Projetos pessoais 🪤</p>
         <div className="w-24 h-1 bg-primary mx-auto mt-2 rounded-full" />
       </div>
 

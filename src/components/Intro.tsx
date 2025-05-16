@@ -6,7 +6,7 @@ export default function Intro() {
     return (
         <section
             id="Intro"
-            className="flex flex-col-reverse md:flex-row items-center justify-between bg-base-100 m-4 p-8 rounded-3xl drop-shadow-xl overflow-hidden relative min-h-screen"
+            className="flex flex-col-reverse md:flex-row items-center justify-between bg-base-100 m-4 p-8 rounded-3xl drop-shadow-xl overflow-hidden relative"
             data-aos="fade-right"
         >
             {/* Esquerda: Texto */}
@@ -15,7 +15,7 @@ export default function Intro() {
                 <p className="text-5xl font-bold text-primary leading-tight">
                     Samuel Rech Cassanego <span className="inline-block animate-wave">👋</span>
                 </p>
-                <p className="text-lg font-light italic text-subtext">Engenheiro de Dados em Transição | Desenvolvedor Backend</p>
+                <p className="text-lg font-light italic text-subtext">Desenvolvedor</p>
                 <Description />
                 <Buttons />
             </div>
