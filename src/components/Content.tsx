@@ -29,7 +29,7 @@ export default function Content() {
           {
             empresa: "PJFIT",
             funcao: "Desenvolvedor de Software",
-            duracao: "Ago 2022 - Mar 2023",
+            duracao: "Ago 2022 - Set 2023",
             atividades: [
               "Organização e manutenção de bancos de dados relacionais e não-relacionais.",
               "Integração de APIs Bancárias (Inter, Banco ABC, Bradesco) com o sistema interno em PHP.",
@@ -50,7 +50,7 @@ export default function Content() {
           {
             empresa: "Verden - Rastreamento e gestão de frotas",
             funcao: "Estagiário",
-            duracao: "Jan 2021 - Set 2021",
+            duracao: "Jan 2021 - Jul 2022",
             atividades: [
               "Criação de APIs para comunicação com o aplicativo mobile de monitoramento.",
               "Documentação e segurança de endpoints.",

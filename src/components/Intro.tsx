@@ -15,19 +15,23 @@ export default function Intro() {
                 <p className="text-5xl font-bold text-primary leading-tight">
                     Samuel Rech Cassanego <span className="inline-block animate-wave">👋</span>
                 </p>
-                <p className="text-lg font-light italic text-subtext">Desenvolvedor</p>
+                <p className="text-lg font-light italic text-subtext">Engenheiro de Dados | Desenvolvedor Backend</p>
                 <Description />
                 <Buttons />
             </div>
 
             {/* Direita: Foto */}
-            <div className="flex justify-center items-center flex-1 relative" data-aos="fade-left">
-                <div className="relative w-80 h-80 flex justify-center items-center">
+            <div className="flex justify-center items-center flex-1 relative w-full md:w-auto" data-aos="fade-left">
+                <div className="relative w-full max-w-xs h-auto aspect-square flex justify-center items-center">
                     {/* Fundo com forma */}
                     <div className="absolute w-full h-full bg-primary opacity-70 clip-wave" />
 
                     {/* Imagem */}
-                    <img src="/perfil.png" alt="Perfil" className="relative object-contain w-full h-full z-10" />
+                    <img
+                        src="/perfil.png"
+                        alt="Perfil"
+                        className="relative object-contain w-full h-full z-10"
+                    />
                 </div>
             </div>
         </section>

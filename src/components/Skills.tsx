@@ -28,6 +28,7 @@ export default function Skills({
     PHP: <FaPhp />,
     React: <FaReact />,
     Docker: <FaDocker />,
+    RabbitMQ: <FaDatabase />,
     PostgreSQL: <FaDatabase />,
     MongoDB: <FaDatabase />,
     'Redes Neurais': <FaBrain />,

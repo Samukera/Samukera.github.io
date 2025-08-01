@@ -38,7 +38,7 @@ export default function About() {
                     <Skills
                         langFrameworks={["Python", "JavaScript", "TypeScript", "PHP", "Flask", "Django", "Laravel", "Vue.js", "React"]}
                         databases={["PostgreSQL", "MongoDB", "MariaDB", "SQLite", "MySQL"]}
-                        engineeringTools={["Docker", "Git", "Linux", "Selenium", "ETL", "APIs REST"]}
+                        engineeringTools={["Docker", "RabbitMQ", "Git", "Linux", "Selenium", "ETL", "APIs REST"]}
                         machineLearningTools={["TensorFlow", "PyTorch", "Scikit-learn", "Redes Neurais", "LLMs", "OpenCV", "YOLO"]}
                         dataAnalysisTools={["Pandas", "Matplotlib", "Seaborn", "Plotly", "Power BI", "Tableau"]}
                     />
