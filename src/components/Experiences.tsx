@@ -1,49 +1,81 @@
 import React from 'react';
-import { FaBriefcase, FaCalendarAlt } from 'react-icons/fa';
+import { FaBriefcase, FaCalendarAlt, FaArrowRight } from 'react-icons/fa';
 
 type Experience = {
   empresa: string;
   funcao: string;
   duracao: string;
   atividades: string[];
-  cor: string; // Cor para o card
-  atual?: boolean; // Indica se é a experiência atual
+  cor: string;
+  atual?: boolean;
 };
 
 export default function Experiences({ experiences }: { experiences: Experience[] }) {
   return (
     <section
-      id="Experiences"
-      className="flex flex-col items-center bg-base-100 m-4 p-8 rounded-3xl drop-shadow-xl"
-      data-aos="fade-up"
+      id="experiences"
+      className="py-20 px-4 md:px-8"
     >
-      {/* Título */}
-      <div className="text-center mb-8">
-        <p className="text-4xl font-bold italic text-primary">Experiências 🎯</p>
-        <div className="w-24 h-1 bg-primary mx-auto mt-2 rounded-full"></div>
-      </div>
+      <div className="max-w-full mx-auto">
+        <div className="text-center mb-16" data-aos="fade-up">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <span className="gradient-text">Experiências Profissionais</span>
+          </h2>
+          <div className="w-24 h-1 gradient-bg mx-auto rounded-full"></div>
+        </div>
 
-      {/* Cards de experiências */}
-      <div className="flex flex-col gap-8 w-full max-w-4xl">
-        {experiences.map((exp) => (
-          <div
-            key={exp.empresa}
-            className={`p-6 rounded-2xl shadow-lg bg-base-100 border-t-4 ${exp.atual ? 'border-primary shadow-darkBlue-900/80' : 'border-neutral'}`}
-            data-aos="fade-up"
-          >
-            <p className={`flex items-center gap-2 text-xl font-bold ${exp.atual ? 'text-primary' : 'text-neutral'}`}>
-              <FaBriefcase /> {exp.empresa}
-            </p>
-            <p className="flex items-center gap-2 text-subtext">
-              <FaCalendarAlt /> {exp.funcao} - {exp.duracao}
-            </p>
-            <ul className="list-disc list-inside mt-4 text-subtext space-y-2">
-              {exp.atividades.map((atividade, index) => (
-                <li key={index}>{atividade}</li>
-              ))}
-            </ul>
+        <div className="relative">
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-secondary to-transparent"></div>
+
+          <div className="space-y-12">
+            {experiences.map((exp, index) => (
+              <div
+                key={exp.empresa}
+                className={`relative flex flex-col md:flex-row gap-8 ${
+                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                }`}
+                data-aos="fade-up"
+                data-aos-delay={index * 150}
+              >
+                <div className="flex-1">
+                  <div className="glass-card p-6 md:p-8 ml-8 md:ml-0 hover:border-primary/50 transition-all group">
+                    {exp.atual && (
+                      <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-semibold rounded-full mb-4">
+                        Atual
+                      </span>
+                    )}
+                    <h3 className="text-xl font-bold text-white mb-2 flex items-center gap-2">
+                      <FaBriefcase className="text-primary" />
+                      {exp.empresa}
+                    </h3>
+                    <p className="text-gray-400 mb-4 flex items-center gap-2">
+                      <FaCalendarAlt className="text-secondary" />
+                      {exp.funcao} • {exp.duracao}
+                    </p>
+                    <ul className="space-y-2">
+                      {exp.atividades.map((atividade, idx) => (
+                        <li key={idx} className="text-gray-400 text-sm flex items-start gap-2">
+                          <FaArrowRight className="text-tertiary mt-1 flex-shrink-0 text-xs" />
+                          {atividade}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+                
+                <div className="absolute left-0 md:left-1/2 -translate-x-1/2 mt-6 md:mt-0">
+                  <div className={`w-8 h-8 rounded-full flex items-center justify-center border-4 border-darker ${
+                    exp.atual ? 'gradient-bg' : 'bg-surface'
+                  }`}>
+                    <FaBriefcase className="text-white text-xs" />
+                  </div>
+                </div>
+                
+                <div className="flex-1 hidden md:block"></div>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </section>
   );

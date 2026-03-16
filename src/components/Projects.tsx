@@ -1,79 +1,141 @@
-import Card from "./Card";
+import React from "react";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { SiTypescript, SiPostgresql, SiMongodb, SiExpress, SiFlask, SiDjango, SiLaravel } from 'react-icons/si';
+import { FaNodeJs, FaPhp, FaPython, FaReact, FaJsSquare, FaFileExcel, FaBrain } from 'react-icons/fa';
+
+const projetos = [
+  {
+    titulo: "Robson - Planning Poker",
+    descricao: "Sistema online para estimativas de tasks. Aplicação web para criação de salas de planejamento colaborativo em tempo real.",
+    categoria: "Fullstack",
+    tecnologias: ["Javascript", "Socket.io", "Node.js"],
+    link: "https://climabet.net/robson/#/",
+    github: null,
+    featured: true,
+  },
+  {
+    titulo: "Monitoramento de Tamanduá",
+    descricao: "Projeto em parceria com veterinários especializados. Sistema de monitoramento com IA usando YOLO para detecção em tempo real.",
+    categoria: "Machine Learning",
+    tecnologias: ["Python", "YOLO", "OpenCV"],
+    link: "https://drive.google.com/drive/folders/1j5B79YpRvUN7_Gw3FC2wsbNGI2-SctWa?usp=sharing",
+    github: null,
+    featured: false,
+  },
+  {
+    titulo: "TCC - Detecção Biométrica de Peixes",
+    descricao: "Sistema de monitoramento não invasivo com IA para biometria em piscicultura. Projeto com propriedade intelectual.",
+    categoria: "Redes Neurais",
+    tecnologias: ["Python", "YOLO", "OpenCV"],
+    link: "https://repositorio.ufsm.br/handle/1/32889",
+    github: null,
+    featured: true,
+  },
+  {
+    titulo: "Prae - Livro Fora Estante",
+    descricao: "Sistema de biblioteca online para controle de acervo e trocas de livros entre estudantes da UFSM.",
+    categoria: "Backend",
+    tecnologias: ["Laravel", "PHP", "MySQL"],
+    link: "https://github.com/Samukera/projeto-prae",
+    github: "https://github.com/Samukera/projeto-prae",
+    featured: false,
+  },
+  {
+    titulo: "CFC System",
+    descricao: "Sistema para agendamento e controle de aulas em escolas de habilitação. Disciplina de Projeto de Software II.",
+    categoria: "Backend",
+    tecnologias: ["Node.js", "TypeScript", "Express", "MongoDB"],
+    link: "https://github.com/Samukera/PS2-CFC-Backend-Bravo-Oficial",
+    github: "https://github.com/Samukera/PS2-CFC-Backend-Bravo-Oficial",
+    featured: false,
+  },
+];
+
+const iconMap: { [key: string]: JSX.Element } = {
+  "Node.js": <FaNodeJs />,
+  "PHP": <FaPhp />,
+  "React": <FaReact />,
+  "Laravel": <SiLaravel />,
+  "MongoDB": <SiMongodb />,
+  "TypeScript": <SiTypescript />,
+  "Express": <SiExpress />,
+  "PostgreSQL": <SiPostgresql />,
+  "MySQL": <FaNodeJs />,
+  "Python": <FaPython />,
+  "Javascript": <FaJsSquare />,
+  "Excel": <FaFileExcel />,
+  "OpenCV": <FaBrain />,
+  "YOLO": <FaBrain />,
+  "Socket.io": <FaJsSquare />,
+  "Flask": <SiFlask />,
+  "Django": <SiDjango />,
+};
+
+const categoryColors: { [key: string]: string } = {
+  Fullstack: "from-primary to-secondary",
+  Backend: "from-secondary to-accent",
+  Frontend: "from-accent to-tertiary",
+  "Machine Learning": "from-tertiary to-primary",
+  "Redes Neurais": "from-primary to-tertiary",
+};
 
 export default function Projects() {
-  const projetos = [
-    {
-      titulo: "Robson - Sistema online para estimativas de tasks (Planning poker)",
-      imagem: "/javascript.svg", // alterar para a imagem correta
-      descricao: "O Robson nasceu da vontade de facilitar o acesso a ferramentas que possibilitam uma planning poker online. O sistema é uma aplicação web que permite a criação de salas de planejamento, onde os participantes podem estimar tarefas de forma colaborativa e em tempo real. Através de uma interface intuitiva, os usuários podem criar salas, convidar membros e realizar a votação das estimativas.",
-      categoria: "Frontend",
-      tecnologias: ["Javascript", "Socket.io"],
-      link: "https://climabet.net/robson/#/"
-    },
-    {
-      titulo: "Projeto de Estudos em parceria com veterinários especializados em animais silvestres - Monitoramento de Tamanduá em recinto controlado.",
-      imagem: "/python-3.svg",
-      descricao: "Projeto de estudos em parceria com veterinários especializados em animais silvestres, focado no monitoramento de tamanduás em recinto controlado. Com o uso de IA, foi desenvolvido um sistema de monitoramento que utiliza YOLO para detectar e rastrear os tamanduás em tempo real, permitindo uma análise mais precisa do comportamento e saúde dos animais.",
-      categoria: "Redes Neurais",
-      tecnologias: ["Python", "YOLO", "OpenCV", "Excel"],
-      link: "https://drive.google.com/drive/folders/1j5B79YpRvUN7_Gw3FC2wsbNGI2-SctWa?usp=sharing"
-    },
-    {
-      titulo: "Projeto de TCC - Detecção automática não invasiva de dados biométricos para peixes através de inteligência artificial.",
-      imagem: "/python-3.svg",
-      descricao: "Projeto de TCC focado na aplicação de IA em piscicultura, utilizando Python para desenvolver um sistema de monitoramento e análise de dados. O projeto visa otimizar processos de manejo como por exemplo: biometria dos peixes, utilizando técnicas avançadas de aprendizado de máquina. Atualmente o projeto se encontra em SIGILO devido a questões de propriedade intelectual e pesquisas em andamento.",
-      categoria: "Redes Neurais",
-      tecnologias: ["Python", "YOLO", "OpenCV", "Excel"],
-      link: "https://repositorio.ufsm.br/handle/1/32889"
-    },
-    {
-      titulo: "Prae - Livro Fora Estante",
-      imagem: "/laravel.svg",
-      descricao: "Sistema de biblioteca online para controle de acervo e trocas de livros entre estudantes, parte do projeto Livro Fora da Estante, da UFSM.",
-      categoria: "Fullstack",
-      tecnologias: ["Laravel", "PHP", "MySQL"],
-      link: "https://github.com/Samukera/projeto-prae"
-    },
-    {
-      titulo: "CFC System",
-      imagem: "/nodejs.svg",
-      descricao: "Sistema para agendamento e controle de aulas em escolas de habilitação, desenvolvido para a disciplina de Projeto de Software II.",
-      categoria: "Backend",
-      tecnologias: ["Node.js", "TypeScript", "Express", "MongoDB"],
-      link: "https://github.com/Samukera/PS2-CFC-Backend-Bravo-Oficial"
-    }
-  ];
-
   return (
     <section
-      id="Projects"
-      className="flex flex-col items-center bg-base-100 m-4 p-8 rounded-3xl drop-shadow-xl"
-      data-aos="fade-up"
+      id="projects"
+      className="py-20 px-4 md:px-8 bg-surface/30"
     >
-      {/* Título */}
-      <div className="text-center mb-8">
-        <p className="text-4xl font-bold italic text-primary">Projetos pessoais 🪤</p>
-        <div className="w-24 h-1 bg-primary mx-auto mt-2 rounded-full" />
-      </div>
+      <div className="max-w-full mx-auto">
+        <div className="text-center mb-16" data-aos="fade-up">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <span className="gradient-text">Projetos</span>
+          </h2>
+          <div className="w-24 h-1 gradient-bg mx-auto rounded-full"></div>
+          <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+            Alguns dos projetos que desenvolvi ao longo da minha jornada
+          </p>
+        </div>
 
-      {/* Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl">
-        {projetos.map((proj) => (
-          <a
-            key={proj.titulo}
-            href={proj.link}
-            target="_blank"
-            className="hover:scale-105 hover:shadow-primary/50 transition-transform duration-300 rounded-2xl block"
-          >
-            <Card
-              titulo={proj.titulo}
-              imagem={proj.imagem}
-              descricao={proj.descricao}
-              categoria={proj.categoria}
-              tecnologias={proj.tecnologias}
-            />
-          </a>
-        ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {projetos.map((proj, index) => (
+            <a
+              key={proj.titulo}
+              href={proj.link}
+              target="_blank"
+              className="group"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
+              <div className="glass-card p-6 h-full hover:border-primary/50 transition-all duration-300 hover:transform hover:-translate-y-2">
+                <div className="flex items-start justify-between mb-4">
+                  <span className={`px-3 py-1 rounded-full text-xs font-medium bg-gradient-to-r ${categoryColors[proj.categoria]} text-white`}>
+                    {proj.categoria}
+                  </span>
+                  <FaExternalLinkAlt className="text-gray-500 group-hover:text-primary transition-colors" />
+                </div>
+                
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">
+                  {proj.titulo}
+                </h3>
+                
+                <p className="text-gray-400 text-sm mb-4 line-clamp-2">
+                  {proj.descricao}
+                </p>
+                
+                <div className="flex flex-wrap gap-2">
+                  {proj.tecnologias.map((tec) => (
+                    <span
+                      key={tec}
+                      className="flex items-center gap-1 bg-white/5 px-2 py-1 rounded-lg text-xs text-gray-300"
+                    >
+                      {iconMap[tec] || <FaNodeJs />} {tec}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   );

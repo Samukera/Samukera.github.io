@@ -1,21 +1,34 @@
 import React from "react";
+import Navbar from "./Navbar";
+import Hero from "./Hero";
 import About from "./About";
 import Experiences from "./Experiences";
-import Intro from "./Intro";
 import Projects from "./Projects";
+import Skills from "./Skills";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 export default function Content() {
   return (
-    <>
-      <Intro />
+    <div className="bg-darker bg-pattern min-h-screen">
+      <Navbar />
+      <Hero />
       <About />
+      <Skills />
       <Experiences
         experiences={[
           {
+            empresa: "Zeit",
+            funcao: "Engenheiro de Machine Learning",
+            duracao: "Fev 2026 - o momento",
+            atividades: ["Desenvolvimento de soluções de Machine Learning para otimização de processos internos, IA de produtos e automatização de processos guiados por IA."],
+            cor: "primary",
+            atual: true,
+          },
+          {
             empresa: "Delta Global",
             funcao: "Desenvolvedor Fullstack",
-            duracao: "Out 2023 - o momento",
+            duracao: "Out 2023 - Fev 2026",
             atividades: [
               "Desenvolvimento e otimização de produtos na área de rastreamento em tempo real utilizando PHP e Node.js no backend.",
               "Implementação de lógicas robustas para extração e tratamento de dados com alto grau de confiabilidade e performance (bancos com bilhões de registros).",
@@ -23,8 +36,8 @@ export default function Content() {
               "Mesclagem e análise de grandes volumes de dados sensíveis com foco em performance e qualidade de insights.",
               "Participação em POCs, incluindo projeto que gerou faturamento superior a R$ 6 milhões.",
             ],
-            cor: "primary",
-            atual: true,
+            cor: "",
+            atual: false,
           },
           {
             empresa: "PJFIT",
@@ -62,6 +75,7 @@ export default function Content() {
       />
       <Projects />
       <Contact />
-    </>
+      <Footer />
+    </div>
   );
 }
