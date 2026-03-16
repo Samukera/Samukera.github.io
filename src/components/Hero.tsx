@@ -90,7 +90,7 @@ export default function Hero() {
             </div>
 
             <div className="absolute -bottom-4 -right-4 glass-card px-6 py-4 rounded-2xl min-w-[240px]">
-              <p className="text-sm text-gray-400 mb-1">Especialista em</p>
+              <p className="text-sm text-gray-200 mb-1">Especialista em</p>
 
               <div className="relative h-7 overflow-hidden">
                 <AnimatePresence mode="wait">
